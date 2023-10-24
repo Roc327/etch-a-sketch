@@ -19,8 +19,51 @@ function createRow(size, i) {
   }
 }
 
+let colorCount = 1;
+
 function changeColor(obj) {
-  obj.style.backgroundColor = "black";
+  switch (colorCount) {
+    case 1:
+      obj.style.backgroundColor = "#676769";
+      colorCount++;
+      break;
+    case 2:
+      obj.style.backgroundColor = "#505054";
+      colorCount++;
+      break;
+    case 3:
+      obj.style.backgroundColor = "#404041";
+      colorCount++;
+      break;
+    case 4:
+      obj.style.backgroundColor = "#303032";
+      colorCount++;
+      break;
+    case 5:
+      obj.style.backgroundColor = "#313135";
+      colorCount++;
+      break;
+    case 6:
+      obj.style.backgroundColor = "#202023";
+      colorCount++;
+      break;
+    case 7:
+      obj.style.backgroundColor = "#1d1d20";
+      colorCount++;
+      break;
+    case 8:
+      obj.style.backgroundColor = "#19191a";
+      colorCount++;
+      break;
+    case 9:
+      obj.style.backgroundColor = "#0c0c0d";
+      colorCount++;
+      break;
+    case 10:
+      obj.style.backgroundColor = "black";
+      colorCount = 1;
+      break;
+  }
 }
 
 function clearDivs() {
