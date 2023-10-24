@@ -93,7 +93,6 @@ function handleSquaresButton() {
     squares = prompt("Must be 100 or less, please renter an amount: ");
   }
   createColumn(squares);
-  //setHeight();
 }
 
 createColumn(16);
