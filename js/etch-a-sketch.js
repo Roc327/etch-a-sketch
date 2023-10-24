@@ -67,6 +67,7 @@ function changeColor(obj) {
 }
 
 function clearDivs() {
+  colorCount = 1;
   const colElement = document.querySelectorAll(".column");
   const rowElement = document.querySelectorAll("cell-row");
   for (const element of rowElement) {
@@ -78,6 +79,7 @@ function clearDivs() {
 }
 
 function clearClick() {
+  colorCount = 1;
   let cells = document.querySelectorAll(".cell-row");
   for (var i = 0; i < cells.length; i++) {
     cells[i].style.backgroundColor = "#e5e7eb";
